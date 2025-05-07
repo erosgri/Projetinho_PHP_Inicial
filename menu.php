@@ -1,8 +1,20 @@
 <nav class="modulos">
+                <div class="modulo amarelo">
+                    <h4>Modulo - 10 Namespace</h4>
+                    <ul>
+                        <li><a href="exercicioa.php?dir=tratamento_erro&file=try_catch">Try && Catch</a></li>
+                        <li><a href="exercicioa.php?dir=tratamento_erro&file=gerenciador_erro">Gerenciador Erro</a></li>
+                        <li><a href="exercicioa.php?dir=tratamento_erro&file=erros_personalizados">Erros Personalizados</a></li>
+                        <li><a href="exercicioa.php?dir=tratamento_erro&file=desafio_intdiv">Desafio Int/Div</a></li>
+                        <li><a href="exercicioa.php?dir=tratamento_erro&file=desafio_intdiv_teste">Desafio Int/Div</a></li>
+                    </ul>                        
+                </div>                
                 <div class="modulo verde">
                     <h4>Modulo - 10 Namespace</h4>
                     <ul>
                         <li><a href="exercicioa.php?dir=namespace&file=basico">Exemplo Basico</a></li>
+                        <li><a href="exercicioa.php?dir=namespace&file=sub_namespace">Sub-Namespace</a></li>
+                        <li><a href="exercicioa.php?dir=namespace&file=use_as">Use && As</a></li>
                     </ul>                        
                 </div>                
                 <div class="modulo marrom">
