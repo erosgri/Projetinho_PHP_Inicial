@@ -10,7 +10,7 @@
 body {
 
         height: 80vh;
-        margin: 0px;
+        margin: 5px;
         display: grid;
         grid-template-rows: 140px 45px 1fr 30px;
         grid-template-columns: 1fr;
@@ -61,15 +61,15 @@ body {
 
 .principal {
     grid-area: principal;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 180px);
     background-color: bisque;
     padding: 30px;
 }
 
 .conteudo {
-    position: relative;
-    height: 100%;
-    overflow-y: scroll;
+    position:static;
+    height: 90%;
+    overflow-y:scroll;
     background-color: bisque;
     padding: 20px;
     box-shadow: 10px 5px 5px rgb(0, 0, 0);
@@ -215,17 +215,20 @@ h3 {
     justify-content: flex-end;
     align-items: center;
     background-color: bisque;
+    height: 100%;
 
 }
 
 .navegacao >a{
 
+    
      text-decoration: none;
      color: rgb(255, 255, 255);
-     font-weight: 300;
-     font-size: 1.7rem;
+     font-weight: 700;
+     font-size: 1.rem;
      padding: 10px 10px;
      margin-right: 15px;
+     background-color: bisque;
 
 }
 
@@ -234,6 +237,7 @@ span.usuario {
     justify-self: flex-start;
     padding-left: 10px;
     font-size: 1.2rem;
+     background-color: bisque;
 }
 
 
@@ -242,6 +246,9 @@ span.usuario {
     background-color: rgb(42, 6, 248);
     font-size: 1rem;
     margin: 2px;
+    
+    
+    
     
     
 
