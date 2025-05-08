@@ -1,6 +1,17 @@
 <nav class="modulos">
+
+                <div class="modulo azul">
+                    <h4>Modulo - 12 Namespace</h4>
+                    <ul>
+                        <li><a href="exercicioa.php?dir=sessao_cookie&file=sessao1">Sessao #1</a></li>
+                        <li><a href="exercicioa.php?dir=sessao_cookie&file=sessao2">Sessao #2</a></li>
+                        <li><a href="exercicioa.php?dir=sessao_cookie&file=limpar_sessao">Limpar Sessão</a></li>
+                        <li><a href="exercicioa.php?dir=sessao_cookie&file=gerenciar_sessao">Gerenciar Sessão</a></li>
+                    </ul>                        
+                </div> 
+                               
                 <div class="modulo amarelo">
-                    <h4>Modulo - 10 Namespace</h4>
+                    <h4>Modulo - 11 Trat. de erro</h4>
                     <ul>
                         <li><a href="exercicioa.php?dir=tratamento_erro&file=try_catch">Try && Catch</a></li>
                         <li><a href="exercicioa.php?dir=tratamento_erro&file=gerenciador_erro">Gerenciador Erro</a></li>
@@ -27,7 +38,7 @@
                     </ul>                        
                 </div>                
                 <div class="modulo cinza">
-                    <h4>Modulo - 08 Orientação de Objetos</h4>
+                    <h4>Modulo - 08 Objetos O-O</h4>
                     <ul>
                         <li><a href="exercicioa.php?dir=orientacaoobj&file=classe">Classe de Objetos</a></li>
                         <li><a href="exercicioa.php?dir=orientacaoobj&file=desafio_data">Desafio Data</a></li>
@@ -94,7 +105,7 @@
                     </ul>                     
                 </div>
                 <div class="modulo violeta">
-                    <h4>Modulo - 04 Estruturas de controle</h4>
+                    <h4>Modulo - 04 Estr. de controle</h4>
                     <ul>
                         <li><a href="exercicioa.php?dir=estruturas_controle&file=if_else">If and Else</a></li>
                         <li><a href="exercicioa.php?dir=estruturas_controle&file=operadores_relacionais">Operadores Relacionais</a></li>
