@@ -1,28 +1,23 @@
-*{
-
-    font-family: "kanit";
+html, body {
+  
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
-
-
+    background-color: bisque; /* ou qualquer cor de fundo que você quiser */
+    font-family: "Kanit", sans-serif;
+    height: auto;
+    min-height: 100%;
 }
-
 body {
-
-        height: 80vh;
-        margin: 5px;
-        display: grid;
-        grid-template-rows: 140px 45px 1fr 30px;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-                "cabecalho"
-                "navegacao"
-                "principal"
-                "rodape";
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "cabecalho"
+        "navegacao"
+        "principal"
+        "rodape";
     
-    
-    
-    }
+}
 
             
 
@@ -37,7 +32,8 @@ body {
     align-items: center;
     padding-bottom: 10px;
     z-index: 1;
-    box-shadow: 10px 5px 5px rgb(0, 255, 255);
+    
+    
 
 }
 .cabecalho>h1 {
@@ -54,27 +50,29 @@ body {
     font-weight: 300;
     font-size: 1.5rem;
 
-
 }
-
-
 
 .principal {
+    flex: 1;
     grid-area: principal;
-    height: calc(100vh - 180px);
     background-color: bisque;
     padding: 30px;
+   
 }
+
+
 
 .conteudo {
-    position:static;
-    height: 90%;
-    overflow-y:scroll;
-    background-color: bisque;
+    flex: 1;   
     padding: 20px;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0);
-
+    max-width: 100%;        /* Garante que o conteúdo não estoure a largura */
+    box-sizing: border-box; /* Garante que padding não aumente a largura */
+    background-color: bisque;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
 }
+
 
 .modulos{
     display: flex;
@@ -172,64 +170,25 @@ h3 {
 .modulo.preto { border: 2px solid rgb(0, 0, 0);}
 .modulo.preto > h4 { background-color:  rgb(0, 0, 0);}
 
-
-
-.rodape {
-
-    grid-area: rodape;
-    background-color: bisque;
-    flex-direction: row;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    font-size: 0.8rem;
-    padding-right: 30px;
-    color: #222;
-    
-}
-
-.rodape>h1{
-
-    grid-area: rodape;
-    padding-right: 0px;
-    border-bottom: 2px solid #f50202;
-    font-size: 1.2rem;
-    
-
-
-}
-
-.rodape>h2{
-
-    grid-area: rodape;
-    padding-inline: 10px;
-    
-   
-
-}
-
 .navegacao{
-
+    
     grid-area: navegacao;    
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: bisque;
-    height: 100%;
-
+    height: 100%;    
 }
 
-.navegacao >a{
-
+.navegacao >a{   
     
-     text-decoration: none;
-     color: rgb(255, 255, 255);
-     font-weight: 700;
-     font-size: 1.rem;
-     padding: 10px 10px;
-     margin-right: 15px;
-     background-color: bisque;
-
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.rem;
+    padding: 10px 10px;
+    margin-right: 15px;
+    background-color: bisque;    
 }
 
 span.usuario {
@@ -237,22 +196,97 @@ span.usuario {
     justify-self: flex-start;
     padding-left: 10px;
     font-size: 1.2rem;
-     background-color: bisque;
+    background-color: bisque;
 }
 
+.rodape {
+
+     grid-area: rodape;
+    background-color: bisque;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 0.8rem;
+    padding: 10px 30px;
+    color: #222;
+    
+}
+
+.rodape>h1{
+
+    grid-area: rodape;
+    justify-content:end;
+    grid-template-areas: rodape;
+    padding-right: 0px;
+    border-bottom: 2px solid #f50202;
+    font-size: 1.2rem;   
+}
+
+.rodape>h2{
+
+    grid-area: rodape;
+    justify-content:end;
+    grid-template-areas: rodape;
+    padding-inline: 10px;
+}
 
 
 .navegacao >a {
     background-color: rgb(42, 6, 248);
     font-size: 1rem;
     margin: 2px;
-    
-    
-    
-    
-    
-
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    background-color: bisque;
+    min-height: 100vh;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+}
 
+/* Cabeçalho */
+.cabecalho {
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navegação */
+.navegacao {
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Conteúdo principal */
+.principal {
+    flex: 1;
+    padding: 30px;
+    background-color: bisque;
+}
+
+/* Conteúdo interno com rolagem natural */
+.conteudo {
+    max-width: 100%;
+    padding: 20px;
+    background-color: bisque;
+    box-sizing: border-box;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: bisque;
+    padding: 10px 30px;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #222;
+    border-top: 2px solid #f50202;
+}

@@ -1,7 +1,37 @@
-<nav class="modulos">
 
+
+
+        <nav class="modulos">
+                <div class="modulo cinza">
+                    <h4>Modulo - 16 Banco de Dados</h4>
+                     <ul>
+                         <li><a href="exercicioa.php?dir=banco_de_dados&file=conexao">Conexão do Banco de Dados</a></li>
+                         <li><a href="exercicioa.php?dir=banco_de_dados&file=criando">Criando Banco de Dados</a></li>
+                         <li><a href="exercicioa.php?dir=banco_de_dados&file=tabela">Criando Tabela DB</a></li>
+                         <li><a href="exercicioa.php?dir=banco_de_dados&file=inserir1">Inserir Registro #01</a></li>
+                         <li><a href="exercicioa.php?dir=banco_de_dados&file=consultar">Consultar Registro DB</a></li>
+                    </ul>                        
+                </div>
+                <div class="modulo vermelho">
+                    <h4>Modulo - 15 Formulário</h4>
+                     <ul>
+                         <li><a href="exercicioa.php?dir=formulario&file=formulario">Formulário</a></li>
+                    </ul>                        
+                </div>
+                <div class="modulo violeta">
+                    <h4>Modulo - 14 API</h4>
+                    <ul>
+                        <li><a href="exercicioa.php?dir=api&file=data1">Data #01</a></li>
+                        <li><a href="exercicioa.php?dir=api&file=data2">Data #02</a></li>
+                        <li><a href="exercicioa.php?dir=api&file=escrever_arquivos">Escrever Arquivos</a></li>
+                        <li><a href="exercicioa.php?dir=api&file=ler_arquivos">Ler Arquivos</a></li>
+                        <li><a href="exercicioa.php?dir=api&file=upload">Upload de Arquivos</a></li>
+                        <li><a href="exercicioa.php?dir=api&file=download">Download de Arquivos</a></li>
+                        <li><a href="exercicioa.php?dir=api&file=imagens">Imagens</a></li>
+                    </ul>                        
+                </div> 
                 <div class="modulo azul">
-                    <h4>Modulo - 12 Namespace</h4>
+                    <h4>Modulo - 13 Cookie & Sessão</h4>
                     <ul>
                         <li><a href="exercicioa.php?dir=sessao_cookie&file=sessao1">Sessao #1</a></li>
                         <li><a href="exercicioa.php?dir=sessao_cookie&file=sessao2">Sessao #2</a></li>
@@ -158,12 +188,6 @@
                     </ul>
                 </div>
                 
-                <div class="modulo vermelho">
-                    <h4>Modulo - 14 Formulário</h4>
-                    <ul>
-                        <li><a href="exercicioa.php?dir=formulario&file=formulario">Formulário</a></li>
-                    </ul>                        
-                </div>
                 <div class="modulo preto">
                     <h5>Modulo extra - JavaScript</h5>
                     <ul>

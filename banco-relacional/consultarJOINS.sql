@@ -13,6 +13,7 @@ SELECT * FROM cidades c INNER join prefeitos p on c.id = p.cidade_id
 
 SELECT * FROM cidades c LEFT join prefeitos p on c.id = p.cidade_id
 UNION 
+
 SELECT * FROM cidades c RIGHT join prefeitos p on c.id = p.cidade_id
 
 

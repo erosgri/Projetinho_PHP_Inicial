@@ -6,3 +6,4 @@ DELETE from estados
 WHERE id >=666
 
 SELECT * FROM estados
+

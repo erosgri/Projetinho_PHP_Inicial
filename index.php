@@ -38,7 +38,7 @@ if(!$_SESSION['usuario']){
         <h2>Índice dos Exercícios</h2>
     </header>
 
-    <nav>
+    <!-- <nav>
 
         <class class="navegacao">
             <span class="usuario">Usuário: <?= $_SESSION['usuario']?></span>
@@ -46,6 +46,11 @@ if(!$_SESSION['usuario']){
             
            
         </class>
+    </nav> -->
+
+    <nav class="navegacao">
+        <span class="usuario">Usuário: <?= $_SESSION['usuario']?></span>
+        <a href="logout.php">Sair</a>
     </nav>
 
     <main class="principal">
@@ -54,14 +59,22 @@ if(!$_SESSION['usuario']){
         </div>
     </main>
 
-    <footer class="rodape">
+    
+    <!-- <footer class="rodape">
         
         <h1>Este curso foi patrocinado por Carlos Eduardo Espíndola <h1>
         <h2><img src="assets/img/cadu.jpeg" alt="20px" width="41px"></h2>
 
 
+    </footer> -->
+
+    <footer class="rodape">
+            <p>Este curso foi patrocinado por Carlos Eduardo Espíndola  
+            <img src="assets/img/cadu.jpeg" alt="Foto do patrocinador" width="41px"></p>
     </footer>
-    
 </body>
+
+
+
 </html>
 
